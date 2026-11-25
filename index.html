@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Clarity digital solutions: web development, mobile apps, cloud, AI and design.">
+  <title>Clarity - Digital Solutions Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar: Bootstrap responsive collapse + dropdown -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container-fluid page-container">
+        <a class="navbar-brand" href="#home"><span class="logo-mark"><i class="bi bi-box-fill"></i></span>Clarity</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav main-links me-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+              <ul class="dropdown-menu shadow-sm">
+                <li><a class="dropdown-item" href="#services"><i class="bi bi-code-slash me-2"></i>Web Development</a></li>
+                <li><a class="dropdown-item" href="#services"><i class="bi bi-phone me-2"></i>Mobile Applications</a></li>
+                <li><a class="dropdown-item" href="#services"><i class="bi bi-cloud me-2"></i>Cloud Solutions</a></li>
+                <li><a class="dropdown-item" href="#services"><i class="bi bi-cpu me-2"></i>AI & Machine Learning</a></li>
+                <li><a class="dropdown-item" href="#services"><i class="bi bi-palette me-2"></i>UI/UX Design</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <div class="d-flex align-items-center header-actions gap-3">
+            <button class="btn btn-text-orange" type="button" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</button>
+            <a class="btn btn-primary-orange rounded-pill" href="#contact">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero-section">
+      <div class="container-fluid page-container">
+        <div class="row align-items-center hero-row g-5">
+          <div class="col-lg-7 hero-copy">
+            <div class="eyebrow"><i class="bi bi-rocket-takeoff-fill"></i> Transforming Digital Experiences</div>
+            <h1><span class="gradient-text">Digital Solutions</span><br>That Drive<br><span class="orange-text">Growth</span></h1>
+            <p class="hero-description">We craft innovative digital experiences that transform businesses and accelerate growth. From cutting-edge web applications to mobile solutions, we deliver technology that makes a difference.</p>
+            <div class="hero-buttons d-flex flex-wrap gap-3">
+              <a class="btn btn-primary-orange hero-main-btn rounded-pill" href="#contact">Start Your Project <i class="bi bi-arrow-right ms-2"></i></a>
+              <button class="btn btn-outline-demo rounded-pill" type="button" data-bs-toggle="modal" data-bs-target="#demoModal"><i class="bi bi-play-fill me-2"></i>Watch Demo</button>
+            </div>
+            <div class="hero-stats d-flex flex-wrap gap-4 gap-sm-5">
+              <div><strong>500+</strong><span>Projects Delivered</span></div>
+              <div><strong>98%</strong><span>Client Satisfaction</span></div>
+              <div><strong>24/7</strong><span>Support</span></div>
+            </div>
+          </div>
+          <div class="col-lg-5 hero-art-col">
+            <div class="hero-art">
+              <div class="hero-image-frame"><img src="images/hero-img.png" alt="Modern workspace with multiple screens showing digital dashboards"></div>
+              <span class="floating-icon floating-code"><i class="bi bi-code-slash"></i></span>
+              <span class="floating-icon floating-phone"><i class="bi bi-phone-fill"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: Bootstrap grid, 3 / 2 / 1 columns -->
+    <section id="services" class="section-pad services-section">
+      <div class="container-fluid page-container">
+        <div class="section-head text-center mx-auto">
+          <span class="section-badge"><i class="bi bi-gear-fill"></i> Our Services</span>
+          <h2>Comprehensive <span>Digital Solutions</span></h2>
+          <p>From concept to deployment, we provide end-to-end digital services that transform your business and engage your customers.</p>
+        </div>
+        <div class="row g-4 services-grid">
+          <div class="col-md-6 col-xl-4"><article class="service-card h-100"><div class="service-icon"><i class="bi bi-code-slash"></i></div><h3>Web Development</h3><p>Custom web applications built with cutting-edge technologies. Responsive, scalable, and optimized for performance.</p><ul><li>React & Next.js Development</li><li>E-commerce Solutions</li><li>Progressive Web Apps</li></ul><a href="#contact">Learn More <i class="bi bi-arrow-right"></i></a></article></div>
+          <div class="col-md-6 col-xl-4"><article class="service-card h-100"><div class="service-icon icon-bright"><i class="bi bi-phone-fill"></i></div><h3>Mobile Applications</h3><p>Native and cross-platform mobile apps that deliver exceptional user experiences across all devices.</p><ul><li>iOS & Android Development</li><li>React Native & Flutter</li><li>App Store Optimization</li></ul><a href="#contact">Learn More <i class="bi bi-arrow-right"></i></a></article></div>
+          <div class="col-md-6 col-xl-4"><article class="service-card h-100"><div class="service-icon"><i class="bi bi-cloud-fill"></i></div><h3>Cloud Solutions</h3><p>Scalable cloud infrastructure and services that grow with your business needs and ensure maximum uptime.</p><ul><li>AWS & Azure Integration</li><li>DevOps & CI/CD</li><li>Microservices Architecture</li></ul><a href="#contact">Learn More <i class="bi bi-arrow-right"></i></a></article></div>
+          <div class="col-md-6 col-xl-4"><article class="service-card h-100"><div class="service-icon icon-bright"><i class="bi bi-cpu-fill"></i></div><h3>AI & Machine Learning</h3><p>Intelligent solutions powered by artificial intelligence and machine learning to automate and optimize processes.</p><ul><li>Predictive Analytics</li><li>Natural Language Processing</li><li>Computer Vision</li></ul><a href="#contact">Learn More <i class="bi bi-arrow-right"></i></a></article></div>
+          <div class="col-md-6 col-xl-4"><article class="service-card h-100"><div class="service-icon icon-bright"><i class="bi bi-graph-up-arrow"></i></div><h3>Digital Marketing</h3><p>Data-driven marketing strategies that increase brand visibility and drive customer engagement across all channels.</p><ul><li>SEO & SEM Optimization</li><li>Social Media Management</li><li>Content Strategy</li></ul><a href="#contact">Learn More <i class="bi bi-arrow-right"></i></a></article></div>
+          <div class="col-md-6 col-xl-4"><article class="service-card h-100"><div class="service-icon"><i class="bi bi-palette-fill"></i></div><h3>UI/UX Design</h3><p>User-centered design that creates intuitive, beautiful, and accessible digital experiences that users love.</p><ul><li>User Research & Testing</li><li>Wireframing & Prototyping</li><li>Design Systems</li></ul><a href="#contact">Learn More <i class="bi bi-arrow-right"></i></a></article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology tabs: content is generated from JavaScript data -->
+    <section id="technology" class="section-pad tech-section">
+      <div class="container-fluid page-container">
+        <div class="section-head text-center mx-auto">
+          <span class="section-badge"><i class="bi bi-gear-fill"></i> Technology Stack</span>
+          <h2>Cutting-Edge <span>Technologies</span></h2>
+          <p>We leverage the latest technologies and frameworks to build scalable, secure, and high-performance solutions.</p>
+        </div>
+        <div class="tech-inner mx-auto">
+          <ul class="nav tech-tabs justify-content-between" id="techTabs" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" data-category="frontend" type="button" role="tab" aria-selected="true"><i class="bi bi-code-slash"></i> Frontend</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-category="backend" type="button" role="tab" aria-selected="false"><i class="bi bi-hdd-stack-fill"></i> Backend</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-category="mobile" type="button" role="tab" aria-selected="false"><i class="bi bi-phone-fill"></i> Mobile</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-category="cloud" type="button" role="tab" aria-selected="false"><i class="bi bi-cloud-fill"></i> Cloud & DevOps</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-category="database" type="button" role="tab" aria-selected="false"><i class="bi bi-database-fill"></i> Database</button></li>
+          </ul>
+          <div class="tech-panel" role="tabpanel" aria-live="polite">
+            <h3 id="techTitle">Frontend Technologies</h3>
+            <p id="techDescription">Modern frameworks and libraries for creating exceptional user interfaces</p>
+            <div class="row g-4" id="techCards"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews: Bootstrap Carousel auto-rotates; dots jump to a specific review. -->
+    <section id="testimonials" class="section-pad testimonial-section">
+      <div class="container-fluid page-container">
+        <div class="section-head text-center mx-auto">
+          <span class="section-badge"><i class="bi bi-chat-quote-fill"></i> Client Testimonials</span>
+          <h2>What Our <span>Clients Say</span></h2>
+          <p>Don't just take our word for it. Hear how our clients describe working with us.</p>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide reviews-carousel mx-auto" data-bs-ride="carousel" data-bs-interval="4800" data-bs-pause="hover" aria-label="Client testimonials">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <article class="testimonial-card featured-review">
+                <div class="rating"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span>5.0 Rating</span><span class="verified-tag"><i class="bi bi-patch-check-fill"></i> Verified</span></div>
+                <p class="review-quote">“Clarity transformed our digital presence. Their team helped us dramatically improve online sales and delivered exceptional results.”</p>
+                <div class="person"><img src="images/avatar-1.jpg" alt="Portrait of Ahmed Al-Farsi"><div><strong>Ahmed Al-Farsi</strong><small>CEO, RetailMax</small><small class="linked-in"><i class="bi bi-linkedin"></i> Verified on LinkedIn</small></div></div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="testimonial-card featured-review">
+                <div class="rating"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span>5.0 Rating</span><span class="verified-tag"><i class="bi bi-patch-check-fill"></i> Verified</span></div>
+                <p class="review-quote">“Our new telemedicine platform transformed patient services, making appointments secure, reliable, and straightforward to use.”</p>
+                <div class="person"><img src="images/avatar-2.jpg" alt="Portrait of Dr. Michael Chen"><div><strong>Dr. Michael Chen</strong><small>Director, MedCare</small><small class="linked-in"><i class="bi bi-linkedin"></i> Verified on LinkedIn</small></div></div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="testimonial-card featured-review">
+                <div class="rating"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span>5.0 Rating</span><span class="verified-tag"><i class="bi bi-patch-check-fill"></i> Verified</span></div>
+                <p class="review-quote">“The mobile banking experience exceeded our expectations and helped us serve customers at a completely new scale.”</p>
+                <div class="person"><img src="images/avatar-3.jpg" alt="Portrait of Eslam Salah"><div><strong>Eslam Salah</strong><small>CTO, FinanceFlow</small><small class="linked-in"><i class="bi bi-linkedin"></i> Verified on LinkedIn</small></div></div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="testimonial-card featured-review">
+                <div class="rating"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span>5.0 Rating</span><span class="verified-tag"><i class="bi bi-patch-check-fill"></i> Verified</span></div>
+                <p class="review-quote">“The analytics dashboard made important business insights easier to understand and improved our day-to-day decisions.”</p>
+                <div class="person"><img src="images/avatar-4.jpg" alt="Portrait of James Wilson"><div><strong>James Wilson</strong><small>VP of Operations, TechCorp</small><small class="linked-in"><i class="bi bi-linkedin"></i> Verified on LinkedIn</small></div></div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="testimonial-card featured-review">
+                <div class="rating"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span>5.0 Rating</span><span class="verified-tag"><i class="bi bi-patch-check-fill"></i> Verified</span></div>
+                <p class="review-quote">“Our cloud migration went smoothly and delivered better performance with no interruption to the services our customers rely on.”</p>
+                <div class="person"><img src="images/avatar-5.jpg" alt="Portrait of Omar Wael"><div><strong>Omar Wael</strong><small>IT Director, GlobalTech</small><small class="linked-in"><i class="bi bi-linkedin"></i> Verified on LinkedIn</small></div></div>
+              </article>
+            </div>
+          </div>
+          <div class="review-navigation" aria-label="Choose a testimonial">
+            <button class="review-arrow" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous review"><i class="bi bi-arrow-left"></i></button>
+            <div class="carousel-indicators review-dots">
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Review 1"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Review 2"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Review 3"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Review 4"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Review 5"></button>
+            </div>
+            <button class="review-arrow" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next review"><i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="text-center mt-5"><p class="mb-3 review-cta-label">Ready to create your success story?</p><a href="#contact" class="btn btn-primary-orange rounded-pill px-5 py-3">Contact Us <i class="bi bi-arrow-right ms-2"></i></a></div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Accordion -->
+    <section id="faq" class="section-pad faq-section">
+      <div class="container-fluid page-container">
+        <div class="section-head text-center mx-auto">
+          <span class="section-badge"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+          <h2>Frequently Asked <span>Questions</span></h2>
+          <p>Find answers to common questions about our services, process, and how we can help transform your business.</p>
+        </div>
+        <div class="accordion faq-accordion mx-auto" id="faqAccordion">
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What services does Clarity offer?</button></h3><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">We offer a comprehensive range of digital services including web development, mobile applications, cloud solutions, AI & machine learning, digital marketing, and UI/UX design. Our team creates custom solutions from concept to deployment and ongoing support.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">How long does a typical project take?</button></h3><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Project timelines vary with scope. A simple website may take 4–6 weeks; a complex web application or mobile app may take 3–6 months. A detailed timeline is provided during consultation.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">What is your development process?</button></h3><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Our agile process includes discovery and planning, design, development with regular updates, testing, and deployment with continued support.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Do you provide ongoing support and maintenance?</button></h3><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. Support and maintenance services can include bug fixes, security updates, performance optimization, feature enhancements, and technical support.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">What technologies do you work with?</button></h3><div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Our technology stack includes React, Next.js, Vue, Angular, Node.js, Python, Java, AWS, Azure, Google Cloud, SQL and NoSQL databases. We choose the stack that best fits the project.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">How do you ensure project security and data privacy?</button></h3><div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">We apply secure development practices such as encryption, authentication, security audits, and appropriate compliance measures based on project requirements.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact: example front-end form only -->
+    <section id="contact" class="section-pad contact-section">
+      <div class="container-fluid page-container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5 contact-intro">
+            <span class="section-badge"><i class="bi bi-stars"></i> Let's Start Your Journey</span>
+            <h2>Ready to<br><span>Transform?</span></h2>
+            <p>Take the first step towards digital excellence. Our experts are ready to turn your vision into reality.</p>
+            <h3>Why Choose Clarity?</h3>
+            <div class="benefit"><i class="bi bi-clock-fill"></i><div><strong>24-Hour Response</strong><span>Quick turnaround on inquiries</span></div></div>
+            <div class="benefit"><i class="bi bi-check-circle-fill"></i><div><strong>100% Satisfaction</strong><span>A commitment to outstanding quality</span></div></div>
+            <div class="benefit"><i class="bi bi-people-fill"></i><div><strong>Expert Team</strong><span>Experienced professionals across technologies</span></div></div>
+            <div class="direct-contact"><h3>Direct Contact</h3><p><i class="bi bi-telephone me-2"></i>+1 (555) 123-4567</p><p><i class="bi bi-envelope me-2"></i>hello@clarity.com</p><p><i class="bi bi-geo-alt me-2"></i>San Francisco, CA</p></div>
+          </div>
+          <div class="col-lg-7">
+            <div class="consultation-card">
+              <h3>Get Your Free Consultation</h3>
+              <p>Fill out the form and we'll get back to you with a personalized proposal.</p>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-sm-6"><label for="firstName" class="form-label">First Name *</label><input type="text" class="form-control" id="firstName" placeholder="John" required></div>
+                  <div class="col-sm-6"><label for="lastName" class="form-label">Last Name *</label><input type="text" class="form-control" id="lastName" placeholder="Doe" required></div>
+                  <div class="col-sm-6"><label for="email" class="form-label">Email Address *</label><input type="email" class="form-control" id="email" placeholder="john@company.com" required></div>
+                  <div class="col-sm-6"><label for="company" class="form-label">Company</label><input type="text" class="form-control" id="company" placeholder="Your Company Name"></div>
+                  <div class="col-sm-6"><label for="interest" class="form-label">Primary Interest</label><select class="form-select" id="interest"><option value="">Choose a service</option><option>Web Development</option><option>Mobile Applications</option><option>Cloud Solutions</option><option>AI & Machine Learning</option><option>Digital Marketing</option><option>UI/UX Design</option></select></div>
+                  <div class="col-sm-6"><label for="timeline" class="form-label">Timeline</label><select class="form-select" id="timeline"><option value="">Select timeline</option><option>ASAP</option><option>1–3 months</option><option>3–6 months</option><option>6+ months</option></select></div>
+                  <div class="col-12"><label class="form-label d-block">Project Budget Range</label><div class="budget-list d-flex flex-wrap gap-2"><label><input type="radio" name="budget" value="25k-50k"> $25K – $50K</label><label><input type="radio" name="budget" value="50k-100k"> $50K – $100K</label><label><input type="radio" name="budget" value="100k+"> $100K+</label></div></div>
+                  <div class="col-12"><label for="message" class="form-label">Tell us about your project</label><textarea class="form-control" id="message" rows="4" placeholder="Describe your project..." required></textarea></div>
+                  <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="agree" required><label class="form-check-label" for="agree">I agree to receive communications and accept the <a href="#contact">Privacy Policy</a></label></div></div>
+                  <div class="col-12"><button type="submit" class="btn btn-primary-orange w-100 py-3 rounded-pill">Get My Free Consultation <i class="bi bi-arrow-right ms-2"></i></button><small class="form-note">This is a front-end demonstration form; it does not send data to a server.</small></div>
+                </div>
+              </form>
+              <div id="contactFeedback" class="alert alert-success mt-3 d-none" role="status">Demo validation successful. No message was sent because this project has no backend.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container-fluid page-container"><div class="row g-4 align-items-center"><div class="col-md-6"><a href="#home" class="footer-brand"><span class="logo-mark"><i class="bi bi-box-fill"></i></span> Clarity</a><p>Transforming businesses through innovative digital solutions and cutting-edge technology.</p></div><div class="col-md-6"><div class="footer-links"><a href="#home">Home</a><a href="#services">Services</a><a href="#technology">Technology</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div></div><hr><div class="text-center footer-bottom">© 2025 Clarity. All rights reserved.</div></div></footer>
+
+  <!-- Demo modal -->
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="demoTitle">Clarity: Digital Solutions Preview</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><img class="img-fluid rounded-4 mb-3" src="images/hero-img.png" alt="Digital workspace"><p class="mb-0">This is a demo preview. No video file was included with the supplied assets.</p></div></div></div></div>
+  <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="signinTitle">Sign In</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><p>This is a landing-page demonstration. Account sign-in would require a backend.</p><a class="btn btn-primary-orange" href="#contact" data-bs-dismiss="modal">Contact Us</a></div></div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
